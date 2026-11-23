@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAW ZINE - Dancing Beyond Control</title>
+  
+  <meta name="description" content="RAW ZINE - Independent magazine about free parties, music, and underground culture.">
+  <meta property="og:title" content="RAW ZINE">
+  <meta property="og:description" content="Freedom, community, and self-expression through sound.">
+  <meta property="og:image" content="assets/img/og-cover.jpg">
+  
+  <link rel="icon" href="../ASSETS/" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/fonts.css">
+  <link rel="stylesheet" href="../CSS/variables.css">
+  <link rel="stylesheet" href="../CSS/header.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
+  <link rel="stylesheet" href="../CSS/artworks.css">
+</head>
+<body>
+
+  <header class="header">
+  <a href="../HTML/index.html" class="header__logo">RAW<br>ZINE</a>
+
+  <div class="header__nav-wrapper">
+    <form class="header__search">
+      <span class="header__search-icon-wrapper">
+        <span class="header__menu-icon">≡</span>
+      </span>
+      <input type="search" class="header__search-input" placeholder="Hinted search text">
+      <a type="submit" class="header__search-btn">
+        <svg class="search-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </a>
+    </form>
+
+    <nav class="header__nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="../HTML/index.html" class="nav__link nav__link--active">Homepage</a></li>
+        <li class="nav__item"><a href="../HTML/artworks.html" class="nav__link">Artworks</a></li>
+        <li class="nav__item"><a href="../HTML/studio.html" class="nav__link">Studio</a></li>
+        <li class="nav__item"><a href="../HTML/aboutUs.html" class="nav__link">About Us</a></li>
+      </ul>
+    </nav>
+
+    <input type="checkbox" id="nav-toggle" class="header__toggle">
+
+    <label for="nav-toggle" class="header__hamburger">
+      <span class="header__line"></span>
+      <span class="header__line"></span>
+      <span class="header__line"></span>
+    </label>
+
+    <nav class="nav-overlay">
+      <ul class="nav-overlay__list">
+        <li><a href="../HTML/index.html" class="nav-overlay__link">Homepage</a></li>
+        <li><a href="../HTML/artworks.html" class="nav-overlay__link">Artworks</a></li>
+        <li><a href="../HTML/studio.html" class="nav-overlay__link">Studio</a></li>
+        <li><a href="../HTML/aboutUs.html" class="nav-overlay__link">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main-gallery">
+  <section class="carousel-3d">
+    <div class="carousel-3d__stage">
+      
+      <a href="#slide-1" class="carousel-3d__item">
+        <img src="../IMAGES/hero-renaissancia.jpg" alt="2000's The New Renaissance" class="carousel-3d__img">
+        <div class="carousel-3d__caption">
+          <span class="carousel-3d__tag">Culture</span>
+          <h3 class="carousel-3d__title">2000's The New Renaissance</h3>
+        </div>
+      </a>
+
+      <a href="#slide-2" class="carousel-3d__item">
+        <img src="../IMAGES/graff.jpg" alt="Graffiti" class="carousel-3d__img">
+        <div class="carousel-3d__caption">
+          <span class="carousel-3d__tag">Art & Painting</span>
+          <h3 class="carousel-3d__title">Why you don't pay to see Graffiti?</h3>
+        </div>
+      </a>
+
+      <a href="#slide-3" class="carousel-3d__item">
+        <img src="../IMAGES/kc.jpg" alt="Kurt Cobain" class="carousel-3d__img">
+        <div class="carousel-3d__caption">
+          <span class="carousel-3d__tag">Music</span>
+          <h3 class="carousel-3d__title">Kurt Cobain: extravagant artist</h3>
+        </div>
+      </a>
+
+      <a href="#slide-4" class="carousel-3d__item">
+        <img src="../IMAGES/taviv.jpg" alt="Israeli elections" class="carousel-3d__img">
+        <div class="carousel-3d__caption">
+          <span class="carousel-3d__tag">Politics</span>
+          <h3 class="carousel-3d__title">Israeli elections: candidate parties</h3>
+        </div>
+      </a>
+
+      <a href="#slide-5" class="carousel-3d__item">
+        <img src="../IMAGES/pedrid.jpg" alt="Pedro Sanchez" class="carousel-3d__img">
+        <div class="carousel-3d__caption">
+          <span class="carousel-3d__tag">Politics</span>
+          <h3 class="carousel-3d__title">Pedro Sanchez: the president</h3>
+        </div>
+      </a>
+
+      <a href="#slide-6" class="carousel-3d__item">
+        <img src="../IMAGES/bfp.yellow.jpg.png" alt="Underground Zine" class="carousel-3d__img">
+        <div class="carousel-3d__caption">
+          <span class="carousel-3d__tag">Design</span>
+          <h3 class="carousel-3d__title">The Rise of Underground Zines</h3>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <div id="slide-1" class="lightbox">
+    <a href="#close" class="lightbox__close">&times;</a>
+    <article class="lightbox__content">
+      <img src="../IMAGES/hero-renaissancia.jpg" alt="2000's The New Renaissance" class="lightbox__img">
+      <div class="lightbox__info">
+        <span class="lightbox__tag">Culture & Literature</span>
+        <h2 class="lightbox__title">2000's The New Renaissance</h2>
+        <p class="lightbox__text">From an artistic and cultural perspective, the 2000s can be seen as a new Renaissance fueled by digital communication and creative convergence.
+           As broadband internet reshaped everyday life, independent creators gained unprecedented access to global audiences without relying on traditional gatekeepers.
+           Music, visual art, literature, and underground zines began merging across emerging online platforms, giving rise to raw, hybrid aesthetics that challenged mainstream conventions. 
+           This democratization of tools transformed passive consumers into active collaborators, sparking a vibrant subcultural movement where experimentation, DIY ethos, and cross-disciplinary expression defined the spirit of the decade.</p>
+      </div>
+    </article>
+  </div>
+
+  <div id="slide-2" class="lightbox">
+    <a href="#close" class="lightbox__close">&times;</a>
+    <article class="lightbox__content">
+      <img src="../IMAGES/graff.jpg" alt="Graffiti" class="lightbox__img">
+      <div class="lightbox__info">
+        <span class="lightbox__tag">Art & Painting</span>
+        <h2 class="lightbox__title">Why you don't pay to see Graffiti?</h2>
+        <p class="lightbox__text">Graffiti has long challenged the boundaries between vandalism and visual art, evolving from raw subway tags in 1970s New York into a global cultural language.
+           Rooted in rebellion and public reclamation, street writers use concrete walls, trains, and forgotten urban corners as an open-air canvas accessible to everyone without gallery walls or admission fees.
+            Beyond its vibrant lettering and bold aerosol aesthetics, graffiti carries an inherently political message—asserting visibility in increasingly privatized cities and turning everyday streets into spaces of unfiltered creative resistance.</p>
+      </div>
+    </article>
+  </div>
+
+  <div id="slide-3" class="lightbox">
+    <a href="#close" class="lightbox__close">&times;</a>
+    <article class="lightbox__content">
+      <img src="../IMAGES/kc.jpg" alt="Kurt Cobain" class="lightbox__img">
+      <div class="lightbox__info">
+        <span class="lightbox__tag">Music</span>
+        <h2 class="lightbox__title">Kurt Cobain: extravagant artist</h2>
+        <p class="lightbox__text">Kurt Cobain remains one of the most extravagant and enigmatic figures in modern music history, turning raw vulnerability into a radical artistic statement. 
+          Fronting Nirvana, he rejected polished rock-star conventions in favor of distorted guitars, thrift-store aesthetics, and visceral lyrics that captured the alienation of an entire generation.
+           Beyond his abrasive sound, Cobain’s visual art, handwritten journals, and subversive stage presence revealed a restless, uncompromising creator who blurred the boundaries between punk rebellion and fine art.
+           His refusal to conform to commercial expectations cemented his legacy as an icon whose chaotic authenticity continues to inspire counterculture today.</p>
+      </div>
+    </article>
+  </div>
+
+  <div id="slide-4" class="lightbox">
+    <a href="#close" class="lightbox__close">&times;</a>
+    <article class="lightbox__content">
+      <img src="" alt="Graffiti" class="lightbox__img">
+      <div class="lightbox__info">
+        <span class="lightbox__tag">Art & Painting</span>
+        <h2 class="lightbox__title">Why you don't pay to see Graffiti?</h2>
+        <p class="lightbox__text">Exploring the democratization of urban art and why street murals challenge traditional museum institutions.</p>
+      </div>
+    </article>
+  </div>
+
+  <div id="slide-5" class="lightbox">
+    <a href="#close" class="lightbox__close">&times;</a>
+    <article class="lightbox__content">
+      <img src="" alt="Graffiti" class="lightbox__img">
+      <div class="lightbox__info">
+        <span class="lightbox__tag">Art & Painting</span>
+        <h2 class="lightbox__title">Why you don't pay to see Graffiti?</h2>
+        <p class="lightbox__text">Exploring the democratization of urban art and why street murals challenge traditional museum institutions.</p>
+      </div>
+    </article>
+  </div>
+
+  <div id="slide-6" class="lightbox">
+    <a href="#close" class="lightbox__close">&times;</a>
+    <article class="lightbox__content">
+      <img src="" alt="Graffiti" class="lightbox__img">
+      <div class="lightbox__info">
+        <span class="lightbox__tag">Art & Painting</span>
+        <h2 class="lightbox__title">Why you don't pay to see Graffiti?</h2>
+        <p class="lightbox__text">Exploring the democratization of urban art and why street murals challenge traditional museum institutions.</p>
+      </div>
+    </article>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <a href="../HTML/index.html" class="footer__brand">
+    <span class="footer__logo">RAW<br>ZINE</span>
+  </a>
+
+  <div class="footer__container">
+    <div class="footer__col">
+      <h2 class="footer__title">Contatti</h2>
+      <ul class="footer__list">
+        <li><a href="mailto:info@esempio.it">info@esempio.it</a></li>
+        <li><a href="tel:+390000000000">+39 000 000 0000</a></li>
+        <li>Lun-Ven, 9:00-18:00</li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h2 class="footer__title">Where</h2>
+      <address class="footer__address">
+        Via Esempio, 00<br>
+        00000 Città (XX)<br>
+        Italia
+      </address>
+    </div>
+
+    <div class="footer__col">
+      <h2 class="footer__title">Informazioni</h2>
+      <ul class="footer__list">
+        <li><a href="..//HTML/aboutUs.html">Who are we?</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h2 class="footer__title">Follow Us</h2>
+      <ul class="footer__list">
+        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
