@@ -1,0 +1,50 @@
+:root {
+  --color-brand: #D4FF00;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-surface: #ECE6F0;
+  --color-surface-high: #ECE6F0;
+  --color-card-bg: #2C2C2C;
+  --color-text-dark: #49454F;
+  --color-text-green: #C1C5AE;
+  --font-display: 'Monomaniac One', cursive, sans-serif;
+  --font-brand: 'Monomaniac One', cursive, sans-serif;
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --gap-grid: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header,
+main {
+  margin: 0;
+  padding: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

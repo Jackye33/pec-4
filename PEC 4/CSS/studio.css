@@ -1,0 +1,234 @@
+.main-content {
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.hero-banner {
+  background-color: #000000;
+  width: 100%;
+  margin: 0;
+  min-height: 180px;
+  padding: 2.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: #d4ff00 2px solid;
+}
+
+.hero-banner__title {
+  font-family: "Monomaniac One", sans-serif;
+  font-size: clamp(3.5rem, 9vw, 6.5rem);
+  color: #d4ff00;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-align: center;
+
+  /* Effetto bagliore neon a più strati */
+  text-shadow:
+    0 0 5px #d4ff00,
+    0 0 15px #d4ff00,
+    0 0 30px rgba(212, 255, 0, 0.8),
+    0 0 60px rgba(212, 255, 0, 0.5);
+
+  /* Dissolvenza infinita di 5 secondi */
+  animation: neon-fade 5s ease-in-out infinite;
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background-color: #d4ff00;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  margin-top: 1rem;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  animation: scroll-right 18s linear infinite;
+}
+
+.marquee__text {
+  font-family: var(--font-brand, 'Monomaniac One', sans-serif);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  color: black;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-right: 3rem;
+}
+
+.marquee__text--desktop {
+  display: none;
+}
+
+.studio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-grid);
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.studio-grid__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-grid);
+}
+
+.studio-grid__bottom-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-grid);
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-card-bg);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.article-card__media {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.article-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.article-card__btn {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  z-index: 10;
+  padding: 0.5rem 1rem;
+  background: var(--color-white);
+  color: #000000;
+  font-family: var(--font-brand);
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  display: inline-block;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.article-card__btn:hover{
+  color:#d4ff00;
+  background-color: #000000;
+  transform: scale(1.08);
+}
+.article-card__body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 0.5rem;
+  color: var(--color-text-green);
+  font-family: var(--font-brand);
+}
+
+.article-card__meta {
+  font-size: 1.25rem;
+}
+
+.article-card__title {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.article-card__text {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.article-card--featured {
+  height: 100%;
+}
+
+.article-card--featured .article-card__media {
+  min-height: 22rem;
+  flex: 1;
+}
+
+.article-card--medium .article-card__media {
+  height: 12rem;
+}
+
+.article-card--medium .article-card__title {
+  font-size: 2.5rem;
+}
+
+.article-card--small .article-card__media {
+  height: 6.25rem;
+}
+
+.article-card--small .article-card__title {
+  font-size: 1.50rem;
+}
+
+@media (min-width: 768px) {
+  .search-bar__input {
+    width: 14rem;
+    }
+  }
+   /* Animazione da sinistra verso destra */
+@keyframes scroll-right {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+@keyframes neon-fade {
+  0%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px #d4ff00,
+      0 0 15px #d4ff00,
+      0 0 30px rgba(212, 255, 0, 0.8),
+      0 0 60px rgba(212, 255, 0, 0.5);
+  }
+  50% {
+    opacity: 0.15; /* Dissolvenza morbida senza sparire del tutto (metti 0 se vuoi che sparisca completamente) */
+    text-shadow:
+      0 0 2px #d4ff00,
+      0 0 8px rgba(212, 255, 0, 0.3);
+  }
+}
+
+  /* Tablet e Desktop: mostriamo tutti gli span per il loop 3 + 3 */
+@media (min-width: 768px) {
+    .marquee__text--desktop {
+      display: inline-block;
+    }
+  }
+  
+@media (min-width: 768px) {
+  .studio-grid__bottom-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+@media (min-width: 992px) {
+  .studio-grid {
+    grid-template-columns: 1.2fr 1fr;
+    align-items: start;
+  }
+}
+}
